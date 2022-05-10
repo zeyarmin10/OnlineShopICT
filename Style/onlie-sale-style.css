@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fcf8f8;
+  font-family: Montserrat;
+}
+.main {
+  width: 100%;
+  margin: 0 auto;
+}
+.container {
+  width: 100%;
+  background-color: #000000;
+}
+a,
+li {
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+.mainHeaderMenu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(49, 49, 49);
+  color: whitesmoke;
+  font-family: Montserrat;
+  padding: 15px 0;
+}
+.leftHeader {
+  width: 50%;
+  text-align: center;
+}
+.leftHeaderMenuText {
+  align-items: center;
+}
+.rightHeader {
+  width: 50%;
+}
+.rightHeaderMenu {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.rightHeaderMenuList {
+  width: 20%;
+  display: inline-block;
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+.list1 {
+  width: 25%;
+}
+.list2 {
+  width: 15%;
+}
+.Tele {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.rightHeaderMenuList:hover {
+  color: yellowgreen;
+  transition: 0.3s ease-out;
+  font-size: 0.95em;
+}
+
+.searchBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 0;
+}
+.logo {
+  width: 50%;
+}
+.logo img {
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  display: block;
+}
+.search {
+  width: 50%;
+  display: block;
+}
+form {
+  width: 100%;
+}
+.searchBox-outter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.searchBox-inner {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid grey;
+  padding: 1px;
+}
+.searchInputBox {
+  display: inline-block;
+  height: 35px;
+  font-family: Montserrat;
+  border: none;
+  padding-left: 10px;
+}
+.textInputBox {
+  width: 75%;
+}
+.searchInputBox:focus {
+  outline: none;
+}
+.searchInputBox:focus::placeholder {
+  color: transparent;
+}
+.submitButton {
+  width: 25%%;
+}
+div button {
+  display: inline-block;
+  width: 100%;
+  height: 35px;
+  border: none;
+  background-color: red;
+  color: whitesmoke;
+  font-size: 0.9em;
+  font-family: Montserrat;
+}
+button:hover {
+  background-color: tomato;
+}
+::placeholder {
+  color: lightgrey;
+  font-size: 1em;
+}
+
+.navigationBar {
+  width: 100%;
+  background-color: red;
+  padding: 1% 0;
+}
+.navigationMenu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+}
+.navigationMenu li {
+  list-style-type: none;
+}
+.navigationMenu li a {
+  text-decoration: none;
+  font-family: Montserrat;
+  color: white;
+  font-size: 0.9em;
+}
+.navigationMenu li a:hover {
+  color: lightgrey;
+}
+.superNav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9px;
+  position: absolute;
+  color: white;
+  border-radius: 20%;
+  line-height: 16px;
+  /* top: 50%;
+    /* right: -5px; */
+  margin-top: -14px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+.hiddenNavMenu {
+  width: 100%;
+  display: none;
+}
+
+.itemsContainer {
+  margin: 0 auto;
+  width: 80%;
+}
+.flex_box {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.salesItems {
+  width: 25%;
+}
+div img {
+  width: 90%;
+}
+footer {
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 850px) {
+  .leftHeader {
+    display: none;
+  }
+  .rightHeader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightHeaderMenu {
+    width: 100%;
+  }
+  .rightHeaderMenu a {
+    font-size: 0.8em;
+    padding: 3px 0;
+    text-align: center;
+    width: 31%;
+  }
+  .rightHeaderMenu a:hover {
+    font-size: 0.83em;
+  }
+  .Tele {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+  .search {
+    max-width: 100%;
+    font-size: 0.8em;
+  }
+  ::placeholder {
+    color: lightgrey;
+    font-size: 0.8em;
+  }
+
+  .navigationBar {
+    display: none;
+  }
+  .hiddenNavMenu {
+    display: block;
+    background-color: white;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    font-size: smaller;
+  }
+  .searchBar {
+    display: none;
+  }
+  .hiddenNavMenuFlexBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .hiddenMenuBox {
+    /* padding-left: 10%; */
+    width: 30%;
+  }
+  .searchLensIcon {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+  }
+  .magiclens {
+    width: 23%;
+  }
+
+  .salesItems {
+    width: 50%;
+    padding-bottom: 3.5%;
+  }
+}
